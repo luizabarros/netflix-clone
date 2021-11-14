@@ -1,5 +1,5 @@
 # Netflix Clone
-A Netflix clone made with HTML and CSS.
+A Netflix clone with a cookies pop-up made with HTML, CSS and Javascript.
 
 ### Final Result
 
