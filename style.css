@@ -29,6 +29,14 @@ img {
     height: auto;
 }
 
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--email-button-hover);
+}
+
 form.email-area {
     display: flex;
     flex-direction: column;
@@ -98,7 +106,6 @@ form.email-area {
     font-size: 2.7rem;
     padding: 0 3rem;
     height: 6rem;
-    cursor: pointer;
 }
 
 @media only screen and (min-width: 950px) and (max-width: 1200px) {
@@ -118,10 +125,6 @@ form.email-area {
     .email-area .inserir-email label {
         min-width: 5rem;
     }
-}
-
-.email-area button:hover {
-    background: var(--email-button-hover);
 }
 
 .email-area button img {
@@ -377,4 +380,44 @@ footer p {
     color: var(--footer-text);
     font-size: 1.6rem;
     padding-top: 3rem;
+}
+
+.cookies {
+    display: none;
+}
+
+.cookies.show {
+    display: flex;
+    justify-content: center;
+    animation: cookies .5s;
+}
+
+@keyframes cookies {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.cookies-posicao {
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+
+.cookies span, .cookies button {
+    color: var(--text);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.cookies button {
+    background: var(--button);
+    padding: 1.3rem;
+    margin-left: 1rem;
 }
