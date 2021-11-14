@@ -150,14 +150,7 @@ header.menu {
 
 @media only screen and (max-width: 550px) {
     .menu {
-        left: 3rem;
-        right: 3rem;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .menu {
-        justify-content: center;
+        flex-direction: column;
     }
 }
 
@@ -177,9 +170,9 @@ header.menu {
     position: relative;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 550px) {
     .menu ul li {
-        margin: 1rem 1.5rem 0 0;
+        margin: 1rem;
     }
 }
 
